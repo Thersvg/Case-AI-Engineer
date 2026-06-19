@@ -131,34 +131,4 @@ cd backend
 8. Abra novamente a página do participante e escolha um horário configurado.
 9. Confira métricas, gráfico e histórico no dashboard.
 
-## Testes
-
-Validação atual: 17 testes do backend, dependências consistentes e build TypeScript/Vite aprovados.
-
-```powershell
-cd backend
-.venv\Scripts\python.exe -m pytest -q
-```
-
-```powershell
-cd frontend
-npm.cmd run build
-```
-
 Consulte a [documentação técnica da entrega](docs/TECHNICAL_DOCUMENTATION.md) e os [controles de segurança](docs/SECURITY.md).
-
-## Publicar no GitHub
-
-O `.gitignore` já exclui `.env`, bancos SQLite, ambientes virtuais, `node_modules` e builds. Antes do primeiro envio, confirme que nenhuma chave real foi copiada para arquivos versionados:
-
-```powershell
-git init
-git add .
-git status
-git commit -m "Entrega do desafio Vigil Summit Agent"
-git branch -M main
-git remote add origin URL_DO_SEU_REPOSITORIO
-git push -u origin main
-```
-
-Não use `git add -f` em arquivos ignorados. Gere novas chaves para qualquer credencial que já tenha sido compartilhada durante o desenvolvimento.
